@@ -53,11 +53,7 @@ The code for the Random Color Palette Generator extension is structured as follo
 - **App.css:** The CSS styles associated with the extension's user interface.
 - **index.tsx:** The entry point of the extension, responsible for rendering the App component.
 
-## Contributing
 
-Contributions to the Random Color Palette Generator extension are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
 
-## License
 
-This extension is released under the [MIT License](LICENSE).
 
