@@ -52,6 +52,20 @@ The code for the Random Color Palette Generator extension is structured as follo
 - **App.tsx:** The main component that defines the user interface and handles the extension's functionality.
 - **App.css:** The CSS styles associated with the extension's user interface.
 - **index.tsx:** The entry point of the extension, responsible for rendering the App component.
+- 
+Code Check in Terminal
+When using React Scripts in a terminal or command prompt to manage React applications, follow these steps to resolve any issues:
+
+Open a terminal or command prompt.
+Navigate to your React project's root directory using the cd command. For example:
+cd C:\path\to\your\react\project
+
+Ensure you have the necessary dependencies installed by running:
+npm install
+Once the dependencies are installed, retry the desired command. For example, to start the development server, use:
+npm start
+These commands will initiate the development server, allowing you to preview your React application. 
+Make sure Node.js is installed on your system and execute the commands from the correct directory within your React project.
 
 
 
