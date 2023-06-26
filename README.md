@@ -57,3 +57,4 @@ The code for the Random Color Palette Generator extension is structured as follo
 
 
 
+
