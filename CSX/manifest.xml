@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ns.adobe.com/AdobeIllustrator/1.0/ExtensionManifest.xsd">
+  <ExtensionList>
+    <Extension Id="com.example.randomthemegenerator" Version="1.0">
+      <HostList>
+        <Host Name="Illustrator" Version="[24.0,25.0]" />
+      </HostList>
+      <ExecutionEnvironmentList>
+        <ExecutionEnvironment Type="Panel" />
+      </ExecutionEnvironmentList>
+      <DispatchInfoList>
+        <Extension DispatchEvent="AI_EVENT_PANEL_SHOW">
+          <Resources>
+            <MainPath>./index.html</MainPath>
+            <ScriptPath>./index.jsx</ScriptPath>
+            <CEFCommandLine/>
+          </Resources>
+          <UI>
+            <Type>Panel</Type>
+            <Menu>Extensions</Menu>
+            <Geometry>
+              <Size>
+                <Height>600</Height>
+                <Width>400</Width>
+              </Size>
+            </Geometry>
+            <Icons/>
+            <Layout>
+              <Constraints>
+                <VerticalResize>true</VerticalResize>
+                <HorizontalResize>true</HorizontalResize>
+              </Constraints>
+            </Layout>
+            <Palette>
+              <Docked>false</Docked>
+            </Palette>
+          </UI>
+        </Extension>
+      </DispatchInfoList>
+    </Extension>
+  </ExtensionList>
+</ExtensionManifest>

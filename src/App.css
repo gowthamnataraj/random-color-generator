@@ -1,0 +1,213 @@
+.App {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 2px dashed #ddd;
+  background: linear-gradient(to right, #F2F2F2, #E5E5E5);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.color-palette {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.color {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%;
+
+
+  transition: background-color 0.10s ease;
+}
+
+.color:hover {
+  transform: scale(1.1);
+}
+
+.save-theme {
+  margin-top: 2rem;
+}
+
+.save-theme input[type="text"] {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.save-theme button {
+  margin-left: 0.888rem;
+}
+
+.saved-themes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.theme-card {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.theme-card:hover {
+  transform: scale(1.05);
+}
+
+.theme-card h3 {
+  margin-top: 0;
+}
+
+.theme-card .color-palette {
+  margin: 1rem 0;
+}
+
+.theme-card .color {
+  width: 20px;
+  height: 20px;
+  margin: 0 0.25rem;
+  border-radius: 50%;
+}
+
+.theme-card p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 0;
+}
+
+.theme-card button {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-card button:hover {
+  background-color: #d32f2f;
+}
+
+.generate-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #1A73E8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+button:hover {
+  background-color: #0D47A1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+button:hover {
+  animation-name: pulse;
+}
+
+p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .color-palette {
+    flex-wrap: wrap;
+  }
+  
+  .color {
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    width: 100%;
+  }
+}
+
+.search-themes {
+  margin-bottom: 2rem;
+}
+
+.search-themes h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.search-themes input[type="text"] {
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.search-themes input[type="text"]::placeholder {
+  color: #999;
+}
+
+.search-themes button {
+  display: block;
+  width: 50%;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #1A73E8;
+  color: #050505;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.search-themes button:hover {
+  background-color: #0D47A1;
+}
