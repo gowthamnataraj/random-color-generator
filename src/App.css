@@ -23,8 +23,6 @@ h1 {
   height: 50px;
   margin: 5px;
   border-radius: 50%;
-
-
   transition: background-color 0.10s ease;
 }
 
