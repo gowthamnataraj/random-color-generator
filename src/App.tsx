@@ -67,11 +67,11 @@ const App: React.FC = () => {
     console.log('Theme saved!');
   };
 
-  const deleteTheme = (themeName: string) => {
-    const updatedThemes = savedThemes.filter(theme => theme.name !== themeName);
+  const deleteTheme = (themeIndex: number) => {
+    const updatedThemes = savedThemes.filter((_, index) => index !== themeIndex);
     setSavedThemes(updatedThemes);
     localStorage.setItem('savedThemes', JSON.stringify(updatedThemes));
-    console.log(`Theme "${themeName}" deleted!`);
+    console.log(`Theme at index ${themeIndex} deleted!`);
   };
 
   return (
@@ -129,7 +129,7 @@ const App: React.FC = () => {
               ))}
             </div>
             <p>Design: {theme.style}</p>
-            <button onClick={() => deleteTheme(theme.name)}>Delete Theme</button>
+            <button onClick={() => deleteTheme(index)}>Delete Theme</button>
           </div>
         ))}
       </div>
