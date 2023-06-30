@@ -36,7 +36,7 @@ To use the Random Color Palette Generator extension, follow these steps:
 7. To save the current theme, enter a name in the "Theme Name" input field and click the **Save Theme** button.
 8. Saved themes will appear in the "Saved Themes" section below, displaying the theme name, color palette, design style, and a "Delete Theme" button to remove a saved theme.
 9. To search for specific themes, enter a search term in the "Search" input field. The filtered themes will be displayed below.
-10. Explore and utilize the saved themes in your creative projects.
+10. Explore and utilize this option for your creation .
 
 ## Tech Stack
 
